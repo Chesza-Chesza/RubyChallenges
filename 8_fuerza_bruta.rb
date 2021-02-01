@@ -1,5 +1,6 @@
 =begin
-Desafío 8Se  busca  crear un  programa fuerza_bruta.rb  que  revise  cuantos  intentos  requiere hackear unpassword por fuerza bruta.
+Desafío 8
+Se  busca  crear un  programa fuerza_bruta.rb  que  revise  cuántos  intentos  requiere hackear un password por fuerza bruta.
 Uso:ruby fuerza_bruta.rb pass
 282404 intentos
 
@@ -13,3 +14,13 @@ Se supone que el password solo contiene letras.**
 Tip: partir con intento = 'a'
 =end
 
+pass= ARGV[0]
+
+word ='a'
+counter = 0
+
+while word != pass
+    counter += 1
+    word = word.next
+end
+puts counter

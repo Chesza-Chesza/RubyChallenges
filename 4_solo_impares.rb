@@ -7,3 +7,6 @@ Uso: ruby solo_impares.rb 5
 1 3 5 7 9
 =end
 
+n = ARGV[0].to_i
+
+(2 * n).times { |i| puts i if i.odd? }
